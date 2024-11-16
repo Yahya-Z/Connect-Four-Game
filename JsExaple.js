@@ -408,7 +408,7 @@ for (let i = 0; i < button.length; i++) {
 }
 
 
-let player1 = prompt("Player One: Enter Your Nmae, You'll be Blue");
+let player1 = prompt("Player One: Enter Your Nmae, You'll be Red");
 let player1Color = 'red';
 
 let player2 = prompt("Player Two: Enter Your Name, You'll be Yellow");
@@ -427,9 +427,9 @@ let gameActive = true;
 let currentPlayer = 1;
 let currentName = player1;
 let currentColor = player1Color;
-$('h3').text(player1+" it is your turn, pick a column to drop in!")
+$('h3').text(player1+" it's your turn, pick a column to drop in!")
 
-// this is the main game function the button clicking
+// This is the main game function the button clicking
 $('.button').on('click', function() {
 
 
@@ -452,7 +452,7 @@ $('.button').on('click', function() {
 
     // this one shows the result
     if (horizontalWinCheck() || verticalWinCheck() || diagonalWinCheck()){
-        $('h1').text(currentName+" You've won!")
+        $('h1').text(currentName+" " "You've won!")
         $('h3').fadeOut('fast');
         $('h2').fadeOut('fast');
         console.log("We have a winner!");
