@@ -452,7 +452,7 @@ $('.button').on('click', function() {
 
     // this one shows the result
     if (horizontalWinCheck() || verticalWinCheck() || diagonalWinCheck()){
-        $('h1').text(currentName+"You've won!")
+        $('h1').text(currentName+" You've won!")
         $('h3').fadeOut('fast');
         $('h2').fadeOut('fast');
         console.log("We have a winner!");
